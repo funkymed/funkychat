@@ -1,0 +1,118 @@
+body{
+	margin: 15px 15px 15px 15px;	
+	color:#555555;
+	overflow:hidden; 
+	font-family:arial;
+	font-size:10pt;
+	background: url(../img/back.gif);
+}
+td{
+	font-family:arial;
+	font-size:10pt;
+}
+#debugDiv {
+	font-family:Arial;
+	font-size:7pt;
+	color:black;
+	border-style: dotted;
+	border-width:2px;
+	border-color: black;
+	padding:5px;
+	background: gray;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 90%;
+	width: 50%;
+	overflow: scroll;
+	display:none;
+}
+#config{
+	width:100%;
+	border:0px green solid;
+}
+#container{
+	width:100%;height:370px;
+	border:0px red solid;
+	overflow:hidden; 
+}
+#chatroom{
+	width:100%;height:320px;
+	border:0px red solid;
+	overflow:scroll; 
+}
+#chatroom a{
+	text-decoration:none;
+	color:#ee0000;
+	font-weight:bold;
+}
+#chatroom a:hover{
+	text-decoration:underline;
+}
+#yourmsg{
+	width:100%;
+	border:0px blue solid;
+}
+input{
+	font-family:arial;
+	font-size:8pt;
+}
+legend{		
+	font: 15px , Arial;
+	font-weight:bold;
+	color:#FFB000;
+}
+fieldset{
+	padding:5px;
+	font: 11px , Arial;
+	background-color:#FFFFFF;
+	text-align:left;
+	border:4px #efefef solid;
+	background-color:#FFFFFF;
+	-moz-border-radius:1em 1em 1em 1em;
+}
+#chatbox{
+	width:300px;position:absolute;right:10px;
+}
+#msginput{
+	width:200px;
+}
+#credit{
+	width:100%;text-align:center;margin:0px;padding:0px;
+	font: 7pt , Arial;
+}
+#credit a{
+	text-decoration:none;color:#bbbbff;
+}
+.linerow_1{
+	background-color:#efefef;
+	display:block;
+}
+.linerow_2{
+	background-color:white;
+	display:block;
+}
+.user{background-color:#efefef;padding:2px;margin:3px;float:left;}
+
+#info{
+	margin:10px;
+	padding:20px;
+	width:50%;
+	height:500px;
+	border:0px red solid;
+	overflow:hidden; 
+	top:10px;left:10px;
+	position:absolute;
+	background-color:#FFFFFF;
+	-moz-border-radius:1em 1em 1em 1em;
+	border:4px #efefef solid;
+	font-family:Arial;
+	font-size:7pt;
+}
+#scrollInfo{
+	height:500px;
+	overflow:hidden;
+}
+
+#info li{list-style-image:url('../img/stars.gif');}
+#info ul{margin:0 0 0px 0;}

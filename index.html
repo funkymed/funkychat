@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title>FunkyChat</title>
+		<script type="text/javascript" src="funkychat/js/lib/prototype.js"></script>
+		<script type="text/javascript" src="funkychat/js/xmlxsltransform.js"></script>
+		<script type="text/javascript" src="funkychat/js/debug.js"></script>
+		<script type="text/javascript" src="funkychat/js/slider.js"></script>
+		<script type="text/javascript" src="funkychat/js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="funkychat/css/css.css"/>
+		<style>
+			a{color:#00bbff;text-decoration:none;}
+			a:hover{color:#ffbb00;text-decoration:none;}
+		</style>
+		
+	</head>
+	<body>
+	
+		<div id="info">
+			<div id="scrollInfo">
+				<img src="funkychat/img/logo.gif" alt="logo"/><br/>
+				<p>FunkyChat Ajax/Php/Sql/Xml/Xsl version RC 1<br/>by Cyril Pereira</p>
+				
+				<p>Prototype JavaScript framework, version 1.5<br/>© by Sam Stephenson</p>
+				    
+				<p><b>Beta testeur :</b> Jylam, Tex, Syph, Sophie, Aiman, Matmax</p>
+				
+				
+				<ul>
+					<li>Download : <a href="/funkychat_RC1.zip">Version rc1</a></li>
+				</ul>
+				<br/>
+				 Funkychat is release in Creative Commons licence
+    
+			    <a href="http://creativecommons.org/licenses/by/2.0/fr/deed.en_GB">EN</a>, <a href="http://creativecommons.org/licenses/by/2.0/fr/">FR</a>,<a href="http://creativecommons.org/licenses/by/2.0/fr/deed.pt">PT</a><br/>
+				<a href="http://creativecommons.org/licenses/by/2.0/fr/" target="_blank"><img src="funkychat/img/somerights20.png" border="0" alt="logo"/></a>
+				
+			</div>
+		</div>
+		<div id="chatbox">
+			<div id="config">
+				<form name="chat" action="" onsubmit="return false;">
+					<fieldset>
+						<legend>Configuration</legend>
+						Nick<input type="text" value="newUser" id="nick"/><br/>
+						<table summary="configuration">
+							<tr>
+								<td>Delay</td>
+								
+								<td>
+									<script type="text/javascript">
+										var A_TPL = {
+											'b_vertical' : false,
+											'b_watch': true,
+											'n_controlWidth': 50,
+											'n_controlHeight': 17,
+											'n_sliderWidth': 10,
+											'n_sliderHeight': 17,
+											'n_pathLeft' : 0,
+											'n_pathTop' : 0,
+											'n_pathLength' : 40,
+											's_imgControl': 'funkychat/img/barre_slide.gif',
+											's_imgSlider': 'funkychat/img/curseur.png',
+											'n_zIndex': 1
+										}											
+										var A_INIT3 = {
+											's_form' : 'chat',
+											's_name': 'time',
+											'n_minValue' : 1,
+											'n_maxValue' : 10,
+											'n_value' : 1,
+											'n_step' : 0.1
+										}							
+										Slider1=new slider(A_INIT3, A_TPL);											
+									</script>
+								</td>
+								<td><input  value="5" id="time" name="time" size="2" readonly="readonly"/></td>
+								<td id="loading"><img src="funkychat/img/ajax-loader.gif" alt="loader"/></td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Users</legend>
+					<div id="whois"></div>
+				</fieldset>
+			</div>
+			<div id="container">
+				<fieldset>
+					<legend>Chat</legend>
+					<div id="chatroom"></div>
+				</fieldset>
+			</div>
+			<div id="yourmsg">
+				<fieldset>
+					<legend>Message</legend>
+					<input type="text" value="" id="msginput" /> <input type="button" value="Send" onclick="SendMsg();"/>
+				</fieldset>
+			</div>
+			
+			<div id="credit"><a href="http://www.cyrilpereira.com">FunkyChat by Cyril Pereira</a></div>
+		</div>
+		<div id="debugDiv"></div>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			_uacct = "UA-944839-4";
+			urchinTracker();
+			Main();
+		</script>
+	</body>
+</html>
+
+
